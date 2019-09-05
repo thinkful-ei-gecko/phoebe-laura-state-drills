@@ -5,7 +5,7 @@ class Accordion extends React.Component {
 
 
   render() {
-    const buttons = this.defaultProps.sections.map((section, index) => (
+    const buttons = this.props.sections.map((section, index) => (
       <button key={index}> {section.title} </button>
     ));
     return <ul>
